@@ -1,5 +1,5 @@
 
-article ,#header , .item , footer {
+#header , .item , footer {
     border:1px solid grey;
 
 }
@@ -11,6 +11,7 @@ article{
 #imageDiv {
     height:200px;
     background-color: grey;
+    position:relative;
 }
 
 
@@ -32,3 +33,14 @@ a {
     color:blue;
 }
 
+figcaption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(230, 230, 230)
+}
+
+figure{
+    margin:0;
+}
