@@ -1,0 +1,29 @@
+/* body {
+    background-color: rgb(1, 18, 18);
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 136, 0);
+    border-radius: 50px;
+} */
+
+:root {
+    --black: rgb(1,18,18);
+    --width: 100px;
+    --height: 100px;
+    --orange:rgb(255,136,0);
+    --borRadius: 50px;
+}
+
+body {
+    background-color: var(--black);
+}
+
+.ball {
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--orange);
+    border-radius: var(--borRadius);
+}
