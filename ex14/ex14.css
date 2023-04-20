@@ -1,0 +1,109 @@
+section {
+    display:grid;
+
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: repeat(6, 50px);
+    grid-template-areas:
+        "input input input input"
+        "plus minus per div"
+        "seven eight nine equals"
+        "four five six equals"
+        "one two three equals"
+        "zero1 point ac equals";
+}
+
+
+.numbers{
+    background-color: white;
+}
+.operators{
+    background-color: rgb(158, 151, 151);
+}
+
+div{
+    border:1px solid grey;
+}
+
+
+#input {
+    grid-area:input;
+    background-color: rgb(49, 47, 47);
+    color:white;
+}
+
+#plus {
+    grid-area:plus;
+}
+#minus {
+    grid-area:minus;
+}
+#per {
+    grid-area:per;
+}
+#div {
+    grid-area:div;
+}
+#one {
+    grid-area:one;
+}
+#two {
+    grid-area:two;
+}
+#three {
+    grid-area:three;
+}
+#four {
+    grid-area:four;
+}
+#five {
+    grid-area:five;
+}
+#six {
+    grid-area:six;
+}
+#seven {
+    grid-area:seven;
+}
+#eight {
+    grid-area:eight;
+}
+#nine {
+    grid-area:nine;
+}
+#ac {
+    grid-area:ac;
+}
+#zero {
+    grid-area:zero1;
+}
+#equals {
+    grid-area:equals;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#div {
+    grid-area:div;
+}
+
