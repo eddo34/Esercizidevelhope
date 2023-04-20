@@ -20,6 +20,9 @@ section {
 
 div{
     border:1px solid grey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -27,6 +30,7 @@ div{
     grid-area:input;
     background-color: rgb(49, 47, 47);
     color:white;
+    align-items: end;
 }
 
 #plus {
