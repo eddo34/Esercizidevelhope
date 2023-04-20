@@ -1,0 +1,86 @@
+nav {
+    background-color: rgb(44, 39, 39);
+    padding: 5px;
+    border-bottom: 2px solid red;
+}
+
+.whiteText {
+    color: white;
+}
+
+#home , #link {
+    text-decoration: none;
+}
+
+.shadedWhite {
+    color:rgb(181, 172, 172)
+}
+
+#dropdown {
+    background-color:rgb(44, 39, 39) ;
+    color:grey;
+    border:unset;
+}
+
+#disabled {
+    background-color: rgb(44, 39, 39);
+    color: grey;
+    border:unset;  
+}
+
+#search2:hover {
+    background-color: green;
+    color:white;
+}
+
+#search2 {
+    color:green;
+    background-color:rgb(44, 39, 39) ;
+    border: 1px solid green;
+}
+
+#search1 {
+    padding:unset;
+    border:unset;
+    padding-left:10px;
+}
+
+.searchElements {
+    height:30px;
+    border-radius: 3px;
+}
+
+@media(min-width:768px) {
+    #home, #link, #dropdown, #dropdown1, #disabled, #search1, #search2{
+        visibility:hidden;
+    }
+    div:not(#divTry) {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        background-color:aliceblue
+    }
+    nav {
+        display:flex;
+        position:relative;
+    }
+    
+    #divTry {
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        color:rgb(230, 230, 230)
+    }
+
+    #navbar {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        color:rgb(230, 230, 230)
+    }
+
+}
