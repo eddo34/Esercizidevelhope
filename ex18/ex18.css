@@ -1,0 +1,36 @@
+h1 {
+  color: green;
+  border-bottom: 2px solid blue;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+article {
+  border: 2px solid green;
+  padding: 15px;
+  text-align: center;
+}
+article:nth-child(odd) {
+  color: blue;
+}
+article:nth-child(even) {
+  color: red;
+}
+
+body {
+  border: 2px solid red;
+  height: fit-content;
+  margin: 15px;
+}
+
+/*# sourceMappingURL=ex18.css.map */
