@@ -1,3 +1,9 @@
+body {
+  border: 2px solid red;
+  height: fit-content;
+  margin: 15px;
+}
+
 h1 {
   color: green;
   border-bottom: 2px solid blue;
@@ -25,12 +31,6 @@ article:nth-child(odd) {
 }
 article:nth-child(even) {
   color: red;
-}
-
-body {
-  border: 2px solid red;
-  height: fit-content;
-  margin: 15px;
 }
 
 /*# sourceMappingURL=ex18.css.map */
