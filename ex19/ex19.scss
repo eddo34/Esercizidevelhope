@@ -1,0 +1,78 @@
+$color-primary: red;
+$color-secondary: green;
+$color-tertiary: blue;
+
+body{
+    border:2px solid $color-primary;
+    height:fit-content;
+    margin:15px;
+}
+
+h1{
+    color:$color-secondary;
+    border-bottom:2px solid $color-tertiary;
+}
+
+div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:15px;
+}
+
+.section-1{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+   
+}
+
+article{
+    border:2px solid;
+    padding:15px;
+    text-align: center;
+}
+
+@mixin article-card($color, $border-color, $font-size: 1rem) {
+    color:$color;
+    border-color:$border-color;
+    font-size:$font-size;
+}
+
+.footer{
+    @include article-card($color-secondary, $color-tertiary, 24px);
+}
+
+.odd-article {
+    @include article-card($color-tertiary, $color-secondary)
+}
+
+.even-article {
+    @include article-card($color-primary, $color-secondary)
+}
+
+.section-2{
+    margin-top: 20px;
+    width:100%;
+}
+
+//     &:nth-child(odd) {
+//         color:$color-tertiary;
+//     }
+//     &:nth-child(even) {
+//         color:$color-primary;
+//     }
+// }
+
+// .footer {
+//     border: none;
+//     padding:15px;
+//     &:first-child {
+//         color:$color-secondary
+//     }
+    
+// }
+
+// .section-2{
+//     font-size: 24px;
+// }
+
