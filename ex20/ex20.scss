@@ -1,0 +1,55 @@
+@use "colorModule.scss" as m;
+@use "function.scss" as f;
+
+body{
+    border:2px solid m.$color-primary;
+    height:fit-content;
+    margin:15px;
+}
+
+h1{
+    color:m.$color-secondary;
+    border-bottom:2px solid m.$color-tertiary;
+}
+
+div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:15px;
+}
+
+.section-1{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+   
+}
+
+article{
+    border:2px solid;
+    padding:15px;
+    text-align: center;
+}
+
+@mixin article-card($color, $border-color, $font-size: 1rem) {
+    color:$color;
+    border-color:$border-color;
+    font-size:$font-size;
+}
+
+.footer{
+    @include article-card(m.$color-secondary, m.$color-tertiary, f.rem(24));
+}
+
+.odd-article {
+    @include article-card(m.$color-tertiary, m.$color-secondary)
+}
+
+.even-article {
+    @include article-card(m.$color-primary, m.$color-secondary)
+}
+
+.section-2{
+    margin-top: 20px;
+    width:100%;
+}

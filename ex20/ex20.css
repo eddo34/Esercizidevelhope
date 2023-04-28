@@ -1,0 +1,53 @@
+body {
+  border: 2px solid red;
+  height: fit-content;
+  margin: 15px;
+}
+
+h1 {
+  color: green;
+  border-bottom: 2px solid blue;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+article {
+  border: 2px solid;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer {
+  color: green;
+  border-color: blue;
+  font-size: 1.5rem;
+}
+
+.odd-article {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+}
+
+.even-article {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+}
+
+.section-2 {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=ex20.css.map */
