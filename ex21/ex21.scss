@@ -1,0 +1,73 @@
+@use "colorModule.scss" as m;
+@use "function.scss" as f;
+
+body{
+    border:2px solid m.$color-primary;
+    height:fit-content;
+    margin:f.rem(15);
+}
+
+
+
+div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:f.rem(15);
+}
+
+.section-1{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+   
+}
+
+article{
+    border:f.rem(2) solid;
+    padding:f.rem(15);
+    text-align: center;
+}
+
+@mixin article-card($color, $border-color, $font-size: 1rem) {
+    color:$color;
+    border-color:$border-color;
+    font-size:$font-size;
+}
+
+
+.section-2{
+    margin-top: f.rem(20);
+    width:100%;
+}
+
+
+
+article {
+    &.footer{
+    @include article-card(m.$color-secondary, m.$color-tertiary, f.rem(24));
+    }
+}
+
+.section-1 article {
+    &.odd-article {
+    @include article-card(m.$color-tertiary, m.$color-secondary)
+    }
+    &.even-article {
+        @include article-card(m.$color-primary, m.$color-secondary)
+    }
+}
+
+.text {
+    color:m.$color-secondary;
+    border-bottom:f.rem(2) solid m.$color-tertiary;
+}
+
+.h1-class{
+    @extend .text;
+}
+.h2-class{
+    @extend .text;
+    padding: 1rem;
+    border: f.rem(2)solid red;
+}
+

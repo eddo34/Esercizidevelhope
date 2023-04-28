@@ -1,0 +1,57 @@
+body {
+  border: 2px solid red;
+  height: fit-content;
+  margin: 0.9375rem;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.9375rem;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+article {
+  border: 0.125rem solid;
+  padding: 0.9375rem;
+  text-align: center;
+}
+
+.section-2 {
+  margin-top: 1.25rem;
+  width: 100%;
+}
+
+article.footer {
+  color: green;
+  border-color: blue;
+  font-size: 1.5rem;
+}
+
+.section-1 article.odd-article {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+}
+.section-1 article.even-article {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+}
+
+.text, .h2-class, .h1-class {
+  color: green;
+  border-bottom: 0.125rem solid blue;
+}
+
+.h2-class {
+  padding: 1rem;
+  border: 0.125rem solid red;
+}
+
+/*# sourceMappingURL=ex21.css.map */
