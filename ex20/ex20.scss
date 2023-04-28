@@ -4,19 +4,19 @@
 body{
     border:2px solid m.$color-primary;
     height:fit-content;
-    margin:15px;
+    margin:f.rem(15);
 }
 
 h1{
     color:m.$color-secondary;
-    border-bottom:2px solid m.$color-tertiary;
+    border-bottom:f.rem(2) solid m.$color-tertiary;
 }
 
 div {
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding:15px;
+    padding:f.rem(15);
 }
 
 .section-1{
@@ -26,8 +26,8 @@ div {
 }
 
 article{
-    border:2px solid;
-    padding:15px;
+    border:f.rem(2) solid;
+    padding:f.rem(15);
     text-align: center;
 }
 
@@ -50,6 +50,6 @@ article{
 }
 
 .section-2{
-    margin-top: 20px;
+    margin-top: f.rem(20);
     width:100%;
 }

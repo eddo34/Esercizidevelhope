@@ -1,19 +1,19 @@
 body {
   border: 2px solid red;
   height: fit-content;
-  margin: 15px;
+  margin: 0.9375rem;
 }
 
 h1 {
   color: green;
-  border-bottom: 2px solid blue;
+  border-bottom: 0.125rem solid blue;
 }
 
 div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
+  padding: 0.9375rem;
 }
 
 .section-1 {
@@ -22,8 +22,8 @@ div {
 }
 
 article {
-  border: 2px solid;
-  padding: 15px;
+  border: 0.125rem solid;
+  padding: 0.9375rem;
   text-align: center;
 }
 
@@ -46,7 +46,7 @@ article {
 }
 
 .section-2 {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   width: 100%;
 }
 
