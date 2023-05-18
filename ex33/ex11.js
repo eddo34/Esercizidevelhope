@@ -1,6 +1,6 @@
 function adultFilter(inputArray) {
-  let checkAge = inputArray.filter((person)=> person.age >= 18);
-  console.log(checkAge);
+  let adults = inputArray.filter((person)=> person.age >= 18);
+  return adults;
 }
 
 const persons = [
