@@ -1,6 +1,6 @@
 function nicknameMap(persons) {
-  let mapped = persons.map((person) => person.name +"-"+ person.age);
-  console.log(mapped);
+  let nicknames = persons.map((person) => person.name +"-"+ person.age);
+  return nicknames;
 }
 
 const persons = [
