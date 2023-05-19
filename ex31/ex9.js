@@ -6,5 +6,7 @@ const person = {
   
   // Print values of person using Object.keys
 
-let entries = Object.entries(person);       
-console.log(entries);
+let keys = Object.keys(person);       
+console.log(keys);
+let values = Object.values(person);       
+console.log(values);
