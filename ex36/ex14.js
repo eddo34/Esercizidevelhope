@@ -1,14 +1,10 @@
 function uncompletedNotes(notes) {
-  notes.forEach((note)=> {
-    if (note.todos.done == false) {
-      result.push(element);
-    }
-  });
-
-  return result;
-
+  let todoArray =[]
+   notes.forEach((note) => 
+    note.todos.filter((todo) => { if(todo.done == false){todoArray.push(todo)}})
+  )
+  console.log(todoArray);
 }
-
 const notes = [
   {
     id: 1,
