@@ -4,10 +4,7 @@ class Person {
     this.lastName = lastName;
   }
   static fromObject(obj) {
-    for (let entries in obj) {
-      
-      
-    }
+    return new Person(obj.firstName, obj.lastName)
   }
 }
 
