@@ -6,12 +6,12 @@ const user = {
 
 
 
-function localSaveObj(obj) {
+function localSaveObj(obj, key) {
   let jsonObj = JSON.stringify(obj)
-  localStorage.setItem("user", `${jsonObj}` )
+  localStorage.setItem(key, `${jsonObj}` )
 };
 
-localSaveObj(user);
+localSaveObj(user, "user");
 
 
 
