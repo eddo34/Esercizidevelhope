@@ -17,6 +17,7 @@ function getData(key) {
   console.log(JSON.parse(data));
 }
 
+
 getData("user");
 
 
