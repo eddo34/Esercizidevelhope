@@ -11,7 +11,8 @@ function localSaveObj(obj, key) {
   localStorage.setItem(key, jsonObj )
 };
 
-localSaveObj(user, "user");
+
+localSaveObj(user, "user"); 
 
 
 
