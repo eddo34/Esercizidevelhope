@@ -11,12 +11,12 @@ function App() {
       <Hello />
       <Message />
       <Welcome name="John" age={2}/>
-      <Counter />
+      <Counter start={0} amount={1} interval={1000}/>
     </div>
   );
 }
 
-
+//in JSX i numeri vanno incapsulati nelle graffe  
 //all'interno delle graffe ci sta il jsx, puoi mettere tag html mischiati a js
 
 export default App;
