@@ -9,11 +9,12 @@ function App() {
     <div>
       <Hello />
       <Message />
-      <Welcome age={24}/>
+      <Welcome name={<strong>Strong</strong>} age={24}/>
     </div>
   );
 }
 
-//SE DOPO WELCOME SPECIFICHI NAME="ALTRO-NOME" , NELL'APP SOSTITUISCE QUELLO IMPOSTATO CON IL DEFAULTPROPS
+
+//all'interno delle graffe ci sta il jsx, puoi mettere tag html mischiati a js
 
 export default App;

@@ -7,9 +7,7 @@ function Welcome (props) {
     )
 }
 
-Welcome.defaultProps={          
-    name:'Betania'
-}
+
 
  //MEMO:DEFAULTPROPS è UNA PAROLA CHIAVE
 
