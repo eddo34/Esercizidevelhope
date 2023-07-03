@@ -3,6 +3,7 @@ import "./App.css";
 import Hello from "./Hello.js";
 import Message from "./Message.js";
 import Welcome from "./Welcome.js";
+import Counter from "./Counter.js";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hello />
       <Message />
       <Welcome name="John" age={2}/>
+      <Counter />
     </div>
   );
 }
