@@ -9,9 +9,11 @@ function App() {
     <div>
       <Hello />
       <Message />
-      <Welcome />
+      <Welcome age={24}/>
     </div>
   );
 }
+
+//SE DOPO WELCOME SPECIFICHI NAME="ALTRO-NOME" , NELL'APP SOSTITUISCE QUELLO IMPOSTATO CON IL DEFAULTPROPS
 
 export default App;
