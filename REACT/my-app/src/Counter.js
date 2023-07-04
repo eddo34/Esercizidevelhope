@@ -1,4 +1,5 @@
-import {useEffect,useState} from 'react'
+import {useEffect,useState} from 'react';
+import CounterDisplay from './CounterDisplay';
 
 function Counter (props) {
     const [count, setCount] = useState(props.start)      //si inizializza qui a zero
@@ -11,7 +12,7 @@ function Counter (props) {
     })    
                                  
     return(
-        <h1>{count}</h1>
+        <CounterDisplay count={count}/>
     )
 }
 
