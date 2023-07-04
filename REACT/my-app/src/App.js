@@ -3,15 +3,15 @@ import "./App.css";
 import Hello from "./Hello.js";
 import Message from "./Message.js";
 import Welcome from "./Welcome.js";
-import Counter from "./Counter.js";
+import ClickCounter from "./ClickCounter";
 
 function App() {
   return (
     <div>
       <Hello />
       <Message />
-      <Welcome name="John" age={2}/>
-      <Counter start={0} amount={1} interval={1000} count={0}/>
+      <Welcome name="John" age={2} />
+      <ClickCounter />
     </div>
   );
 }
