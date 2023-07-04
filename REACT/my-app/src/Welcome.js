@@ -1,6 +1,4 @@
-function Age(props) {
-  return <p>Your age is {props.age}</p>;
-}
+import Age from "./Age.js";
 
 function Welcome(props) {
   return (
