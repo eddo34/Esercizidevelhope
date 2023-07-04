@@ -2,15 +2,15 @@ import logo from "./logo.svg";
 import "./App.css";
 import Hello from "./Hello.js";
 import Message from "./Message.js";
-import Welcome from "./Welcome.js";
 import ClickCounter from "./ClickTracker";
+import InteractiveWelcome from "./InteractiveWelcome";
 
 function App() {
   return (
     <div>
       <Hello />
       <Message />
-      <Welcome name="John" age={2} />
+      <InteractiveWelcome />
       <ClickCounter />
     </div>
   );
