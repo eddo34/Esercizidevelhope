@@ -3,7 +3,7 @@ import "./App.css";
 import Hello from "./Hello.js";
 import Message from "./Message.js";
 import Welcome from "./Welcome.js";
-import ClickCounter from "./ClickCounter";
+import ClickCounter from "./ClickTracker";
 
 function App() {
   return (
