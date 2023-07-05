@@ -22,6 +22,7 @@ function Login({ onLogin }) {
         type="login"
         placeholder="username"
         onChange={(e) => setUsername(e.target.value)}
+        autofocus="true"                                       //unica modifica
       ></input>
       <input
         value={password}
