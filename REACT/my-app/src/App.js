@@ -4,6 +4,7 @@ import Hello from "./Hello.js";
 import Message from "./Message.js";
 import ClickCounter from "./ClickTracker";
 import InteractiveWelcome from "./InteractiveWelcome";
+import Login from "./Login";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Message />
       <InteractiveWelcome />
       <ClickCounter />
+      <Login />
     </div>
   );
 }
