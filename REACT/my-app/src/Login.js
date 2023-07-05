@@ -10,7 +10,7 @@ function Login({ onLogin }) {
     onLogin({ username, password });
   };
 
-  const clearInputs = ()=>{             //modifiche effettuate e clearinput messo sotto
+  const clearInputs = ()=>{             //modifiche effettuate e clearinput messo sotto (ex20)
     setUsername("");
     setPassword("");
 };
