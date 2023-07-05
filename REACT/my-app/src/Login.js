@@ -10,7 +10,7 @@ function Login({ onLogin }) {
     onLogin({ username, password });
   };
 
-  const clearInputs = ()=>{
+  const clearInputs = ()=>{             //modifiche effettuate e clearinput messo sotto
     setUsername("");
     setPassword("");
 };
@@ -32,7 +32,7 @@ function Login({ onLogin }) {
       <button disabled={isDisabled} onClick={loginFunc}>
         Login
       </button>
-      <button onClick={clearInputs}>Reset</button>
+      <button onClick={clearInputs}>Reset</button>       
     </div>
   );
 }
