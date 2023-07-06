@@ -5,6 +5,7 @@ import Message from "./Message.js";
 import ClickCounter from "./ClickTracker";
 import InteractiveWelcome from "./InteractiveWelcome";
 import Login from "./Login";
+import TodoList from "./TodoList"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <InteractiveWelcome />
       <ClickCounter />
       <Login />
+      <TodoList />
     </div>
   );
 }
