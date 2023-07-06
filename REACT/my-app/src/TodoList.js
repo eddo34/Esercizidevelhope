@@ -12,6 +12,12 @@ const TodoList = () => {
   const clearItems = ()=>{
     setItems([]);
   }
+  
+  const handleRemoveItem = (index) => {
+    const updatedItems = [...items];
+    updatedItems.splice(index, 1);
+    setItems(updatedItems);
+  };
 
   return (
     <div>
@@ -24,7 +30,10 @@ const TodoList = () => {
 
       <ul>
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <div>
+            <li key={index}>{item}</li>
+            <button onClick={handleRemoveItem}>Remove</button>
+          </div>
         ))}
       </ul>
       <button onClick={clearItems}>Reset</button>
