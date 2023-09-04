@@ -3,6 +3,7 @@ import "./App.css";
 import Hello from "./Hello.js";
 import Message from "./Message.js";
 import GithubUser from "./GithubUser";
+import GithubUserList from "./GithubUserList";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hello />
       <Message />
       <GithubUser username="eddo34"/>
+      <GithubUserList />
     </div>
   );
 }
