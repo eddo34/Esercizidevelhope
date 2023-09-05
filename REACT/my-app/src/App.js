@@ -4,6 +4,13 @@ import Hello from "./Hello.js";
 import Message from "./Message.js";
 import GithubUser from "./GithubUser";
 import GithubUserList from "./GithubUserList";
+import CarDetails from "./CarDetails";
+
+const carData = {
+  model: 'Swift',
+  year: '2016',
+  color: 'grey'
+}
 
 function App() {
   return (
@@ -12,6 +19,7 @@ function App() {
       <Message />
       <GithubUser username="eddo34"/>
       <GithubUserList />
+      <CarDetails initialData={carData} />
     </div>
   );
 }
