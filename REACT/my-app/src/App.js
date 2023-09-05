@@ -5,6 +5,26 @@ import Message from "./Message.js";
 import GithubUser from "./GithubUser";
 import GithubUserList from "./GithubUserList";
 import CarDetails from "./CarDetails";
+import FilteredList from "./FilteredList";
+
+const list = [
+  {
+      name: 'Eren',
+      id: '1',
+      age: 15,
+  },
+  {
+      name: 'Aldo',
+      id: '2',
+      age: 47,
+  },
+  {
+      name: 'Giovanni',
+      id: '3',
+      age: 25,
+  },
+]
+
 
 const carData = {
   model: 'Swift',
@@ -20,6 +40,7 @@ function App() {
       <GithubUser username="eddo34"/>
       <GithubUserList />
       <CarDetails initialData={carData} />
+      <FilteredList list={list} />
     </div>
   );
 }
