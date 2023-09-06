@@ -4,7 +4,7 @@ import useGithubUser from './useGithubUser';
 
 
 function GithubUser({ username }) {
-  const [fetchUser, data, error, loading] = useGithubUser(username);
+  const {fetchUser, data, error, loading} = useGithubUser(username);
 
   return (
     <div>
